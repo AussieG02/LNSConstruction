@@ -1,0 +1,150 @@
+/* ------------------------------------------------------------------ */
+/*  Lawrence & Sons – Get Quote Form                                  */
+/* ------------------------------------------------------------------ */
+
+.lns-inq-form {
+    max-width: 680px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ---- Rows (two-column on desktop) ---- */
+.lns-inq-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+@media (max-width: 600px) {
+    .lns-inq-row { grid-template-columns: 1fr; }
+}
+
+/* ---- Fields ---- */
+.lns-inq-field {
+    margin-bottom: 20px;
+}
+.lns-inq-field label,
+.lns-inq-field legend {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+.lns-inq-field legend {
+    padding: 0;
+    border: 0;
+}
+.lns-req { color: #c0392b; }
+
+.lns-inq-field input[type="text"],
+.lns-inq-field input[type="email"],
+.lns-inq-field input[type="tel"],
+.lns-inq-field select,
+.lns-inq-field textarea {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    background: #fff;
+    color: #1a1a1a;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    box-sizing: border-box;
+}
+.lns-inq-field input:focus,
+.lns-inq-field select:focus,
+.lns-inq-field textarea:focus {
+    outline: none;
+    border-color: #1F4D3A;
+    box-shadow: 0 0 0 3px rgba(31,77,58,0.12);
+}
+
+/* ---- Radios ---- */
+.lns-inq-radios {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+.lns-inq-radios label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ---- Consent ---- */
+.lns-inq-consent label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+.lns-inq-consent input[type="checkbox"] {
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+/* ---- Submit button ---- */
+.lns-inq-btn {
+    display: inline-block;
+    padding: 14px 36px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: #1F4D3A;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    margin-top: 8px;
+}
+.lns-inq-btn:hover {
+    background: #163429;
+}
+.lns-inq-btn:active {
+    transform: scale(0.98);
+}
+
+/* ---- Honeypot ---- */
+.lns-inq-hp {
+    position: absolute;
+    left: -9999px;
+    height: 0;
+    overflow: hidden;
+}
+
+/* ---- Messages ---- */
+.lns-inq-success {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px 24px;
+    background: #ecfdf5;
+    border: 1px solid #6ee7b7;
+    border-radius: 10px;
+    color: #065f46;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.lns-inq-errors {
+    max-width: 680px;
+    margin: 0 auto 24px;
+    padding: 16px 20px;
+    background: #fef2f2;
+    border: 1px solid #fca5a5;
+    border-radius: 10px;
+    color: #991b1b;
+    font-size: 14px;
+}
+.lns-inq-errors ul {
+    margin: 8px 0 0 18px;
+    padding: 0;
+}
+.lns-inq-errors li {
+    margin-bottom: 4px;
+}
