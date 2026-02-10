@@ -117,7 +117,7 @@ export async function POST(req: NextRequest) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from: `Lawrence & Sons <${process.env.RESEND_FROM || "onboarding@resend.dev"}>`,
+          from: process.env.RESEND_FROM || "Lawrence & Sons <quotes@lnsconstr.com>",
           to: [notifyEmail],
           subject: `[New Inquiry] ${fullName} – ${serviceLabel}`,
           text,
