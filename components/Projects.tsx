@@ -11,7 +11,7 @@ const projects = [
     title: "Complete Roof Replacement",
     tag: "Roofing",
     image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
+      "/images/roofing.jpg",
   },
   {
     title: "Window & Door Upgrade",
