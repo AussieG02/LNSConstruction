@@ -1,4 +1,5 @@
-import { Phone, Mail, MapPin, Home as HomeIcon } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import Image from "next/image";
 
 const serviceLinks = [
   "Siding & Cladding",
@@ -17,18 +18,14 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2.5 mb-5">
-              <div className="w-9 h-9 rounded-lg bg-brand-700 flex items-center justify-center">
-                <HomeIcon className="w-5 h-5 text-white" strokeWidth={2.5} />
-              </div>
-              <div className="leading-tight">
-                <span className="block text-sm font-bold text-white tracking-tight">
-                  Lawrence &amp; Sons
-                </span>
-                <span className="block text-[10px] font-medium text-gray-500 uppercase tracking-widest">
-                  Exterior Renovation
-                </span>
-              </div>
+            <div className="mb-5">
+              <Image
+                src="/images/logo.png"
+                alt="Lawrence & Sons Construction LLC"
+                width={160}
+                height={60}
+                className="h-12 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
               Family-owned exterior renovation specialists. Trusted by
@@ -83,20 +80,18 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-brand-400 mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-gray-400">(905) 555-0123</span>
+                <span className="text-sm text-gray-400">(832) 610-0179</span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-brand-400 mt-0.5 flex-shrink-0" />
                 <span className="text-sm text-gray-400">
-                  info@lawrenceandsons.com
+                  steven@lnsconstr.com
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-brand-400 mt-0.5 flex-shrink-0" />
                 <span className="text-sm text-gray-400">
-                  Serving the Greater Toronto Area
-                  <br />
-                  Oakville, Burlington, Mississauga &amp; beyond
+                  Serving the Houston Metro Area
                 </span>
               </li>
             </ul>

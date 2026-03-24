@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, X, Home as HomeIcon } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -20,18 +21,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 rounded-lg bg-brand-700 flex items-center justify-center">
-              <HomeIcon className="w-5 h-5 text-white" strokeWidth={2.5} />
-            </div>
-            <div className="leading-tight">
-              <span className="block text-sm font-bold text-brand-700 tracking-tight">
-                Lawrence &amp; Sons
-              </span>
-              <span className="block text-[10px] font-medium text-gray-400 uppercase tracking-widest">
-                Exterior Renovation
-              </span>
-            </div>
+          <a href="#home" className="flex items-center group">
+            <Image
+              src="/images/logo.png"
+              alt="Lawrence & Sons Construction LLC"
+              width={160}
+              height={60}
+              className="h-12 w-auto object-contain"
+            />
           </a>
 
           {/* Desktop nav */}

@@ -1,27 +1,22 @@
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 const projects = [
   {
-    title: "Modern Siding Overhaul",
-    location: "Oakville, ON",
+    title: "Siding Replacement",
     tag: "Siding",
-    image:
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+    image: "/images/hero-house.jpg",
   },
   {
     title: "Complete Roof Replacement",
-    location: "Burlington, ON",
     tag: "Roofing",
     image:
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
   },
   {
     title: "Window & Door Upgrade",
-    location: "Mississauga, ON",
     tag: "Windows & Doors",
-    image:
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+    image: "/images/team-windows.jpg",
   },
 ];
 
@@ -69,10 +64,6 @@ export default function Projects() {
                 <h3 className="text-lg font-bold text-gray-900">
                   {project.title}
                 </h3>
-                <div className="mt-2 flex items-center gap-1.5 text-sm text-gray-400">
-                  <MapPin className="w-3.5 h-3.5" />
-                  {project.location}
-                </div>
               </div>
             </div>
           ))}

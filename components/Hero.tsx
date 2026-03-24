@@ -11,7 +11,7 @@ export default function Hero() {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80')",
+            "url('/images/hero-house.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-brand-950/90 via-brand-900/70 to-brand-900/30" />
